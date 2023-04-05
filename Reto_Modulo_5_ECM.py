@@ -163,14 +163,5 @@ elif option2 == 'Unit':
     st.text(('Existen ' + str(df_filtrado2.shape[0])  +' registros que pertenecen a la unidad ' + str(unidad)))
     st.write(df_filtrado2)
 
-
-
-
-
-
-# Some number in the range 0-23
-#hour_to_filter = st.slider('hour', 0, 23, 17)
-#filtered_data = df[df[DATE_COLUMN].dt.hour == hour_to_filter]
-
-#st.subheader('Map of all pickups at %s:00' % hour_to_filter)
-#st.map(filtered_data) 
+--server.enableWebsocketCompression=false
+--server.enableXsrfProtection=false
