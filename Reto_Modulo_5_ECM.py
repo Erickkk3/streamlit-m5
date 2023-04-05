@@ -51,11 +51,10 @@ if st.sidebar.checkbox('Mostrar/Ocultar los empleados por ciudad'):
 
 elif st.checkbox('Mostrar/Ocultar los empleados por unidad'):
     st.subheader('Empleados por unidad')
-    ciudades = df['Unit'].unique()
-    seleccion_ciudad = st.selectbox('Seleccione la unidad',    ciudades)
-    df_filtrado3 = filtros('Unit',seleccion_ciudad)
-    #df_filtrado3 = df_filtrado3['Employee_ID']
-    st.text(('Existen ' + str(df_filtrado3.shape[0])  +' empleados en la ciudad de ' + str(seleccion_ciudad)))
+    unidad = df['Unit'].unique()
+    seleccion_unidad = st.selectbox('Seleccione la unidad',    unidad)
+    df_filtrado3 = filtros('Unit',seleccion_unidad)
+    st.text(('Existen ' + str(df_filtrado3.shape[0])  +' empleados en la unidad de ' + str(seleccion_ciudad)))
     st.write(df_filtrado3)
 
 
