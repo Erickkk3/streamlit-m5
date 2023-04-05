@@ -21,7 +21,7 @@ st.title('RETO DEL MÓDULO CINCO - EMPLOYEES')
 st.header('Caracteristicas de los empleados de distintas unidades de negocio de distintas ciudades')
 st.subheader('El objetivo es brindar una forma simple y didactica para analizar a los empleados de distintas ciudades.')
 
-Ruta_archivo = ('C:/Users/ecrim/Downloads/Employees.csv')
+Ruta_archivo = ('Employees.csv')
 df = cargar_datos(500)
 st.text(('Existen ' + str(df.shape[0])  +' registros en total.'))
 
